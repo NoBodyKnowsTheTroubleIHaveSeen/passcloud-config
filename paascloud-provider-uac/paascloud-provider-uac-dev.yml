@@ -84,9 +84,9 @@ paascloud:
       sms:
         expireIn: 600
         url: /uac/auth/submitResetPwdPhone,/uac/auth/mingProgramRegister
-        mobileMaxSendCount: 1
-        ipMaxSendCount: 2
-        totalMaxSendCount: 3
+        mobileMaxSendCount: 15
+        ipMaxSendCount: 15
+        totalMaxSendCount: 15
     oauth2:
       tokenStore: jwt
       clients[0]:
