@@ -83,7 +83,7 @@ paascloud:
         url: /auth/register,/auth/submitResetPwdEmail,/uac/auth/code/sms
       sms:
         expireIn: 600
-        url: /uac/auth/submitResetPwdPhone
+        url: /uac/auth/submitResetPwdPhone,/uac/auth/mingProgramRegister
         mobileMaxSendCount: 1
         ipMaxSendCount: 2
         totalMaxSendCount: 3
