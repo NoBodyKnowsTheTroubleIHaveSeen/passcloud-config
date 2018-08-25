@@ -101,9 +101,9 @@ paascloud:
       expiredRemainMinutes: 20
       expiredMinutes: 120
   mail:
-    host: smtp.sina.com
-    username: 'whhwkm100@sina.com'
-    password: 'xlyxmm123'
+    host: test.com
+    username: 'test@test.com'
+    password: 'test'
     test-connection: false
     properties:
       mail:
