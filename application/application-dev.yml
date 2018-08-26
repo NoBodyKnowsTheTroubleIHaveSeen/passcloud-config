@@ -102,8 +102,8 @@ paascloud:
       expiredMinutes: 120
   mail:
     host: test.com
-    username: 'test@test.com'
-    password: 'test'
+    username: 'abc@test.com'
+    password: 'test123'
     test-connection: false
     properties:
       mail:
