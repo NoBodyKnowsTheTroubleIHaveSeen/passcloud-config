@@ -59,7 +59,7 @@ hystrix:
           thread:
             #2018-08-27
             #timeoutInMilliseconds: 20000
-            timeoutInMilliseconds: 20000
+            timeoutInMilliseconds: 2000000
 paascloud:
   server:
     eureka:
