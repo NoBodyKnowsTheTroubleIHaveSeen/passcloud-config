@@ -90,7 +90,18 @@ zuul:
         ReadTimeout: 100000
   add-proxy-headers: true
   add-host-header: true
-
+hystrix:
+  propagate:
+    request-attribute:
+      enabled: true
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 200000
 security:
   oauth2:
     client:
