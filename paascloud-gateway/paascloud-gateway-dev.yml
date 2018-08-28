@@ -11,8 +11,8 @@ spring:
 
 zuul:
   host:
-    socket-timeout-millis: 60000
-    connect-timeout-millis: 60000
+    socket-timeout-millis: 600000
+    connect-timeout-millis: 600000
   forceOriginalQueryStringEncoding: true
   routes:
     uac-route:
@@ -26,8 +26,8 @@ zuul:
         MaxAutoRetries: 1
         MaxAutoRetriesNextServer: 2
         OkToRetryOnAllOperations: false
-        ConnectTimeout: 10000
-        ReadTimeout: 10000
+        ConnectTimeout: 100000
+        ReadTimeout: 100000
     mdc-route:
       path: /mdc/**
       sensitiveHeaders:
@@ -38,8 +38,8 @@ zuul:
         MaxAutoRetries: 1
         MaxAutoRetriesNextServer: 2
         OkToRetryOnAllOperations: false
-        ConnectTimeout: 10000
-        ReadTimeout: 10000
+        ConnectTimeout: 100000
+        ReadTimeout: 100000
     omc-route:
       path: /omc/**
       sensitiveHeaders:
@@ -50,8 +50,8 @@ zuul:
         MaxAutoRetries: 1
         MaxAutoRetriesNextServer: 2
         OkToRetryOnAllOperations: false
-        ConnectTimeout: 10000
-        ReadTimeout: 10000
+        ConnectTimeout: 100000
+        ReadTimeout: 100000
     opc-route:
       path: /opc/**
       sensitiveHeaders:
@@ -62,8 +62,8 @@ zuul:
         MaxAutoRetries: 1
         MaxAutoRetriesNextServer: 2
         OkToRetryOnAllOperations: false
-        ConnectTimeout: 10000
-        ReadTimeout: 10000
+        ConnectTimeout: 100000
+        ReadTimeout: 100000
     mall-route:
       path: /mall/**
       sensitiveHeaders:
@@ -74,8 +74,8 @@ zuul:
         MaxAutoRetries: 1
         MaxAutoRetriesNextServer: 2
         OkToRetryOnAllOperations: false
-        ConnectTimeout: 10000
-        ReadTimeout: 10000
+        ConnectTimeout: 100000
+        ReadTimeout: 100000
     tpc-route:
       path: /tpc/**
       sensitiveHeaders:
@@ -86,8 +86,8 @@ zuul:
         MaxAutoRetries: 1
         MaxAutoRetriesNextServer: 2
         OkToRetryOnAllOperations: false
-        ConnectTimeout: 10000
-        ReadTimeout: 10000
+        ConnectTimeout: 100000
+        ReadTimeout: 100000
   add-proxy-headers: true
   add-host-header: true
 
