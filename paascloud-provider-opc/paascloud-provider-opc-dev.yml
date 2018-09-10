@@ -59,10 +59,6 @@ paascloud:
       enable: true
   zk:
     zkAddressList: paascloud-provider-zk:2181
-  qiniu:
-    key:
-      accessKey: yourQiniuAccessKey
-      secretKey: yourQiniuSecretKey
     oss:
       privateHost:
       publicHost:
