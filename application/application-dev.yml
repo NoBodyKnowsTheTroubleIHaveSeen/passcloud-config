@@ -134,13 +134,6 @@ paascloud:
       endpointName: cn-beijing
       product: 'your sms product'
       domain: dysmsapi.aliyuncs.com
-  qiniu:
-    key:
-      accessKey: 'your qiniu accessKey'
-      secretKey: 'your qiniu secretKey'
-    oss:
-      privateHost: 'your qiniu oss private host'
-      publicHost: 'your qiniu oss public host'
   alipay:
     callback:
       url: http://127.0.0.1/omc/pay/alipayCallback
