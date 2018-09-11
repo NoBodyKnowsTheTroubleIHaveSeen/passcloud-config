@@ -50,7 +50,7 @@ paascloud:
       enable: true
   message:
     maxSendTimes: 7
-    handleTimeout: 5
+    handleTimeout: 60
     resendMultiplier: 2
   aliyun:
     rocketMq:
