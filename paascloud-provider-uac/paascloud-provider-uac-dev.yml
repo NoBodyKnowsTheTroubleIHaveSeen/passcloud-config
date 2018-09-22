@@ -16,7 +16,7 @@ mybatis:
 
 mapper:
   mappers: com.paascloud.core.mybatis.MyMapper
-  not-empty: false
+  not-empty: true
   identity: MYSQL
 
 pagehelper:
