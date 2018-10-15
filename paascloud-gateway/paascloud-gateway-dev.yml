@@ -98,7 +98,7 @@ hystrix:
     default:
       execution:
         timeout:
-          enabled: true
+          enabled: false
         isolation:
           thread:
             timeoutInMilliseconds: 200000
