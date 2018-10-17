@@ -123,7 +123,7 @@ paascloud:
             required: true
   aliyun:
     key:
-      accessKeyId: 'your aliyun accessKeyId'
+      accessKeyId: 'your aliyun accessKeyId-app'
       accessKeySecret: 'your aliyun accessKeySecret'
     rocketMq:
       namesrvAddr: 127.0.0.1:9876
