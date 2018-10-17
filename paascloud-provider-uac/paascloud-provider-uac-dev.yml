@@ -45,6 +45,8 @@ security:
 paascloud:
   enableSqlLogInterceptor: false
   aliyun:
+    key:
+      accessKeyId: 'your aliyun accessKeyId-uac'
     rocketMq:
       enable: true
       reliableMessageConsumer: false
