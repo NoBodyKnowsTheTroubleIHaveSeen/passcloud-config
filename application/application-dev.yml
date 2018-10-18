@@ -123,7 +123,7 @@ paascloud:
             required: true
   aliyun:
     key:
-      accessKeySecret: {cipher}AQBF/u1hdyQ0GASmbqL2PXXYHAUgHJg0JVtCqm3SnYJ6oxVVMnO298Mp4NerHg4FsZ9MdmoAc/yhYEJZ4whsw4X6wRHOmA4nYJnfvcakQF8FqOqUZViRK3ZHWPaeXRdzk7DkyfPOpe6uRoDVzWumT2XMmkhy6vztdlPOQdkvIM7ubNLk1cYHsS2dX+5B5C81R+WZ1R6E9uDeNsSY09a/06IQY6mIesH37YdaLCkdaMQ6S/LB/oNAKvaknJLXQ72ViH2vuu2p8GGFUmSX8REWQfC0oSPZuz69dNvLDyoukES5KqMZ3VNp7aC9NsVW+VrOJfFUtoVyZAmdnh9mgyRny57ztWSfVQZ82lQDfUYalsucQt0KDFhJb4mxddON+jZ6VwQ=
+      accessKeySecret: ''
     rocketMq:
       namesrvAddr: 127.0.0.1:9876
     sms:
