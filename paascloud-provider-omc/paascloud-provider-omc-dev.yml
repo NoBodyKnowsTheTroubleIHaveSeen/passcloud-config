@@ -59,6 +59,7 @@ security:
     client:
       clientId: paascloud-client-omc
       clientSecret: paascloudClientSecret
+      access-token-uri: http://paascloud-gateway/uac/oauth/token
       user-authorization-uri: http://paascloud-gateway/uac/oauth/authorize
     resource:
       user-info-uri: http://paascloud-gateway/uac/user
