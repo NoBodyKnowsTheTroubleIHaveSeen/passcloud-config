@@ -70,7 +70,6 @@ paascloud:
       clientAuthenticationScheme: header
       tokenStore: jwt
   zk:
-    zkAddressList: paascloud-provider-zk:2181
     namespace: paascloud-elastic-job
   job:
     task:

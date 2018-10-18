@@ -94,14 +94,14 @@ hystrix:
   propagate:
     request-attribute:
       enabled: true
-  command:
-    default:
-      execution:
-        timeout:
-          enabled: true
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
+#  command:
+#    default:
+#      execution:
+#        timeout:
+#          enabled: true
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 60000
 security:
   oauth2:
     client:

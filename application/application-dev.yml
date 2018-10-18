@@ -26,10 +26,8 @@ feign:
   client:
     config:
       default:
-      # connectTimeout: 5000
-      # readTimeout: 5000   
-        connectTimeout: 500000
-        readTimeout: 500000
+        connectTimeout: 30000
+        readTimeout: 120000
    
    
 ribbon:
@@ -38,11 +36,8 @@ ribbon:
   MaxAutoRetries: 1
   MaxAutoRetriesNextServer: 2
   OkToRetryOnAllOperations: false
-  #2018-08-27
-  #ConnectTimeout: 60000
-  #ReadTimeout: 20000
-  ConnectTimeout: 600000
-  ReadTimeout: 2000000
+  ConnectTimeout: 30000
+  ReadTimeout: 120000
 hystrix:
   command:
     default:
@@ -51,15 +46,13 @@ hystrix:
           enabled: true
         isolation:
           thread:
-            #2018-08-27
-            #timeoutInMilliseconds: 20000
-            timeoutInMilliseconds: 2000000
+            timeoutInMilliseconds: 120000
 paascloud:
   server:
     eureka:
       port: 8761
       hostname: paascloud-eureka
-      serviceUrl: http://root:root@paascloud-eureka:8761/eureka/
+      serviceUrl: http://jxEurke:eurkepwd=123@paascloud-eureka:8761/eureka/
     discovery:
       port: 8080
       hostname: paascloud-discovery
@@ -117,7 +110,8 @@ paascloud:
             required: true
   aliyun:
     key:
-      accessKeySecret: ''
+      accessKeyId: yourAliyunAccessKey
+      accessKeySecret: '{cipher}AQBF/u1hdyQ0GASmbqL2PXXYHAUgHJg0JVtCqm3SnYJ6oxVVMnO298Mp4NerHg4FsZ9MdmoAc/yhYEJZ4whsw4X6wRHOmA4nYJnfvcakQF8FqOqUZViRK3ZHWPaeXRdzk7DkyfPOpe6uRoDVzWumT2XMmkhy6vztdlPOQdkvIM7ubNLk1cYHsS2dX+5B5C81R+WZ1R6E9uDeNsSY09a/06IQY6mIesH37YdaLCkdaMQ6S/LB/oNAKvaknJLXQ72ViH2vuu2p8GGFUmSX8REWQfC0oSPZuz69dNvLDyoukES5KqMZ3VNp7aC9NsVW+VrOJfFUtoVyZAmdnh9mgyRny57ztWSfVQZ82lQDfUYalsucQt0KDFhJb4mxddON+jZ6VwQ='
     rocketMq:
       namesrvAddr: 127.0.0.1:9876
     sms:
@@ -127,11 +121,5 @@ paascloud:
       endpointName: cn-beijing
       product: 'your sms product'
       domain: dysmsapi.aliyuncs.com
-  alipay:
-    callback:
-      url: http://127.0.0.1/omc/pay/alipayCallback
-    qrCode:
-      pcPath: D:/File/alipay/QRCode
-      qiniuPath: alipay/QRCode/
   zk:
     zkAddressList: paascloud-provider-zk:2181

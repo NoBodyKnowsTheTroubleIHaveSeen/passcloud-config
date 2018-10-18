@@ -54,8 +54,6 @@ paascloud:
   token:
     interceptor:
       enable: true
-  zk:
-    zkAddressList: paascloud-provider-zk:2181
   aliyun:
     rocketMq:
       enable: false
