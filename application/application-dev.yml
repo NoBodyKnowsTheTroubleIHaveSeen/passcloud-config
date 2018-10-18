@@ -23,7 +23,8 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://root:root@paascloud-eureka:8761/eureka/
+#      defaultZone: http://jxEurke:eurkepwd=123@paascloud-eureka:8761/eureka/
+      defaultZone: '{cipher}f4c29b86ed56b99061e205f906995d1150d3d11a08eecfaecd999d7260862ec9a298410d54d71bf1fe6f48f56ac34e46806d0331f8977ac6eb25bcbd3757a9e4509c2124e91576307ac0940b1a061d3ae5cdd5d007cb74313599dd6bd2176511'
 
 feign:
   hystrix:
@@ -31,7 +32,6 @@ feign:
   client:
     config:
       default:
-      #2018-08-27
       # connectTimeout: 5000
       # readTimeout: 5000   
         connectTimeout: 500000
