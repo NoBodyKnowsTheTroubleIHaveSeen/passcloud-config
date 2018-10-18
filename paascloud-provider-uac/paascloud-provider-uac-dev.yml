@@ -68,9 +68,6 @@ security:
       filter-order: 3
 
 paascloud:
-  swagger:
-    title: @pom.artifactId@
-    description: @pom.description@
   enableSqlLogInterceptor: false
   aliyun:
     rocketMq:
