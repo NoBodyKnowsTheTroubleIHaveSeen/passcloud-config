@@ -1,3 +1,9 @@
+server:
+  port: 8070
+  tomcat:
+    uri-encoding: UTF-8
+    remote-ip-header: x-forwarded-for
+  use-forward-headers: true
 spring:
   http:
     encoding:
@@ -15,7 +21,25 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
   datasource:
     url: jdbc:mysql://paascloud-db-mysql:3306/paascloud_opc?useUnicode=true&characterEncoding=UTF-8&tinyInt1isBit=false
-
+    filters: stat,wall
+    druid:
+      initial-size: 10
+      min-idle: 10
+      max-active: 30
+      test-on-borrow: false
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      web-stat-filter:
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+      stat-view-servlet:
+        allow:
+        login-username: admin
+        login-password: admin
+  zipkin:
+    base-url: http://paascloud-zipkin:8020
+  sleuth:
+    sampler:
+      percentage: 1.0    
 liquibase:
   change-log: classpath:liquibase/index.xml
   user: ${spring.datasource.username}
@@ -29,7 +53,6 @@ mybatis:
     map-underscore-to-camel-case: true
 
 mapper:
-  mappers: com.paascloud.core.mybatis.MyMapper
   not-empty: true
   identity: MYSQL
 

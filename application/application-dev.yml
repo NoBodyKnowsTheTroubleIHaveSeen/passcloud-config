@@ -100,17 +100,28 @@ paascloud:
       expiredMinutes: 120
   mail:
     host: test.com
-    username: 'abc@test.com'
-    password: 'test123'
+    username: abc@test.com
+    password: test123
+    port: 465
+    protocol: smtp
     test-connection: false
+    default-encoding: UTF-8
     properties:
       mail:
+        debug: true
         smtp:
           auth: true
-          timeout: 2500
+          connectiontimeout: 10000
+          timeout: 10000
+          writetimeout: 10000
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+            port: 465
           starttls:
             enable: true
             required: true
+          ssl:
+            enable: true
   aliyun:
     key:
       accessKeyId: yourAliyunAccessKey
