@@ -26,6 +26,7 @@ zuul:
     uac-route:
       path: /uac/**
       sensitiveHeaders:
+      #去除前缀
       strip-prefix: false
       service-id: paascloud-provider-uac
       ribbon:
