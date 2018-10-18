@@ -39,6 +39,9 @@ ribbon:
   ConnectTimeout: 30000
   ReadTimeout: 120000
 hystrix:
+  propagate:
+    request-attribute:
+      enabled: true
   command:
     default:
       execution:

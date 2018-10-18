@@ -1,3 +1,10 @@
+server:
+  port: ${paascloud.server.provider.uac.port:8100}
+  tomcat:
+    uri-encoding: UTF-8
+    remote-ip-header: x-forwarded-for
+  use-forward-headers: true
+
 spring:
   mvc:
     date-format: yyyy-MM-dd HH:mm:ss
@@ -7,7 +14,25 @@ spring:
   datasource:
     #tinyInt1isBit=false mybatis通过逆向工程生成代码，如果字段是 int(1) 或者 tinyint(1) 会自动生成Boolean类型
     url: jdbc:mysql://paascloud-db-mysql:3306/paascloud_uac?characterEncoding=utf8&useSSL=false&tinyInt1isBit=false
-
+    filters: stat,wall
+    druid:
+      initial-size: 10
+      min-idle: 10
+      max-active: 30
+      test-on-borrow: true
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      web-stat-filter:
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+      stat-view-servlet:
+        allow:
+        login-username: admin
+        login-password: admin
+  zipkin:
+    base-url: http://paascloud-zipkin:8020
+  sleuth:
+    sampler:
+      percentage: 1.0        
 mybatis:
   type-aliases-package: com.paascloud.provider.model.domain
   mapper-locations: classpath:mapper/*.xml,classpath*:sdk/mapper/*.xml
@@ -43,6 +68,9 @@ security:
       filter-order: 3
 
 paascloud:
+  swagger:
+    title: @pom.artifactId@
+    description: @pom.description@
   enableSqlLogInterceptor: false
   aliyun:
     rocketMq:
@@ -69,7 +97,8 @@ paascloud:
       clientAuthenticationScheme: header
   security:
     social:
-      filterProcessesUrl: /uac/login
+#      filterProcessesUrl: /uac/login
+      filterProcessesUrl: /uac/auth
       qq:
         app-id: 101431061
         app-secret: 0154c848f45fc705412462d4f99a592c
@@ -85,9 +114,9 @@ paascloud:
       sms:
         expireIn: 600
         url: /uac/auth/submitResetPwdPhone,/uac/auth/mingProgramRegister
-        mobileMaxSendCount: 15
-        ipMaxSendCount: 15
-        totalMaxSendCount: 15
+        mobileMaxSendCount: 1
+        ipMaxSendCount: 2
+        totalMaxSendCount: 3
     oauth2:
       tokenStore: jwt
       clients[0]:
