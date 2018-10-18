@@ -20,6 +20,31 @@ spring:
     min-idle: 10
     max-active: 20
     test-on-borrow: true
+  mail:
+    host: test.com
+    username: abc@test.com
+    password: test123
+    port: 465
+    protocol: smtp
+    test-connection: false
+    default-encoding: UTF-8
+    properties:
+      mail:
+        debug: true
+        smtp:
+          auth: true
+          connectiontimeout: 10000
+          timeout: 10000
+          writetimeout: 10000
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+            port: 465
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enable: true    
+    
 feign:
   hystrix:
     enabled: true
@@ -98,30 +123,6 @@ paascloud:
     jwt:
       expiredRemainMinutes: 20
       expiredMinutes: 120
-  mail:
-    host: test.com
-    username: abc@test.com
-    password: test123
-    port: 465
-    protocol: smtp
-    test-connection: false
-    default-encoding: UTF-8
-    properties:
-      mail:
-        debug: true
-        smtp:
-          auth: true
-          connectiontimeout: 10000
-          timeout: 10000
-          writetimeout: 10000
-          socketFactory:
-            class: javax.net.ssl.SSLSocketFactory
-            port: 465
-          starttls:
-            enable: true
-            required: true
-          ssl:
-            enable: true
   aliyun:
     key:
       accessKeyId: yourAliyunAccessKey
