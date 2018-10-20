@@ -56,10 +56,10 @@ ribbon:
   eager-load:
     enabled: true
   MaxAutoRetries: 1
-  MaxAutoRetriesNextServer: 2
+  MaxAutoRetriesNextServer: 1
   OkToRetryOnAllOperations: false
-  ConnectTimeout: 30000
-  ReadTimeout: 60000
+  ConnectTimeout: 10000
+  ReadTimeout: 30000
 hystrix:
   propagate:
     request-attribute:
@@ -71,7 +71,7 @@ hystrix:
           enabled: true
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 160000
 paascloud:
   server:
     eureka:
