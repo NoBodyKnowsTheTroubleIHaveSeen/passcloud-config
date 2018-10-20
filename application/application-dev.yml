@@ -44,7 +44,6 @@ spring:
             required: true
           ssl:
             enable: true    
-    
 feign:
   hystrix:
     enabled: true
@@ -53,8 +52,6 @@ feign:
       default:
         connectTimeout: 30000
         readTimeout: 120000
-   
-   
 ribbon:
   eager-load:
     enabled: true
@@ -62,7 +59,7 @@ ribbon:
   MaxAutoRetriesNextServer: 2
   OkToRetryOnAllOperations: false
   ConnectTimeout: 30000
-  ReadTimeout: 120000
+  ReadTimeout: 60000
 hystrix:
   propagate:
     request-attribute:
@@ -74,7 +71,7 @@ hystrix:
           enabled: true
         isolation:
           thread:
-            timeoutInMilliseconds: 120000
+            timeoutInMilliseconds: 60000
 paascloud:
   server:
     eureka:
