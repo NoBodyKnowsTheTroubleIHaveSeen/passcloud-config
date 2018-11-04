@@ -50,13 +50,14 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 30000
-        readTimeout: 120000
+        connectTimeout: 10000
+        readTimeout: 30000
 ribbon:
   eager-load:
     enabled: true
   MaxAutoRetries: 1
   MaxAutoRetriesNextServer: 1
+  #无论是请求超时或者socket read timeout都进行重试  
   OkToRetryOnAllOperations: false
   ConnectTimeout: 10000
   ReadTimeout: 30000
@@ -81,7 +82,7 @@ paascloud:
     discovery:
       port: 8080
       hostname: paascloud-discovery
-      serviceUrl: http://admin:admin@paascloud-discovery:8080
+      serviceUrl: http://jxConfig:configPwd999@paascloud-discovery:8080
     gateway:
       port: 80
       hostname: paascloud-gateway
