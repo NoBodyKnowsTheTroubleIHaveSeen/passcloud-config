@@ -98,8 +98,8 @@ security:
     client:
       clientId: paascloud-client-uac
       clientSecret: paascloudClientSecret
-      access-token-uri: http://paascloud-gateway/uac/oauth/token
-      user-authorization-uri: http://paascloud-gateway/uac/oauth/authorize
+      access-token-uri: http://paascloud-gateway:8888/uac/oauth/token
+      user-authorization-uri: http://paascloud-gateway:8888/uac/oauth/authorize
     resource:
       id: paascloud-resource-uac
       filter-order: 3
