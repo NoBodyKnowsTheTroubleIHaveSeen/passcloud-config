@@ -105,7 +105,7 @@ security:
       user-info-uri: http://paascloud-gateway:8888/uac/user
       prefer-token-info: false
       jwt:
-        key-uri: http://paascloud-gateway:8888/uac/oauth/token_key
+        key-uri: http://paascloud-gateway:8100/uac/oauth/token_key
 
 paascloud:
   enableSqlLogInterceptor: false
