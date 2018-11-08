@@ -193,3 +193,6 @@ paascloud:
         clientSecret: paascloudClientSecret
         accessTokenValidateSeconds: 7200
         scope: "*"
+eureka:
+  instance:
+    hostname : paascloud-client-uac
