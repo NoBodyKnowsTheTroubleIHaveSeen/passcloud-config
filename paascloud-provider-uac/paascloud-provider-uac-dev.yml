@@ -50,7 +50,7 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
   datasource:
     #tinyInt1isBit=false mybatis通过逆向工程生成代码，如果字段是 int(1) 或者 tinyint(1) 会自动生成Boolean类型
-#    url: jdbc:mysql://paascloud-db-mysql:3306/paascloud_uac?characterEncoding=utf8&useSSL=false&tinyInt1isBit=false
+    url: jdbc:mysql://paascloud-db-mysql:3306/paascloud_uac?characterEncoding=utf8&useSSL=false&tinyInt1isBit=false
     filters: stat,wall
     druid:
       initial-size: 10
