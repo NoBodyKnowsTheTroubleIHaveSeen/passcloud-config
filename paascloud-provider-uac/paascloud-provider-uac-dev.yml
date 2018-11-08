@@ -195,4 +195,4 @@ paascloud:
         scope: "*"
 eureka:
   instance:
-    hostname : paascloud-client-uac
+    hostname : paascloud-provider-uac
