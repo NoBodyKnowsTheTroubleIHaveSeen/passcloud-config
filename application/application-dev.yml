@@ -84,7 +84,7 @@ paascloud:
       hostname: paascloud-discovery
       serviceUrl: http://jxConfig:configPwd999@paascloud-discovery:8080
     gateway:
-      port: 80
+      port: 8888
       hostname: paascloud-gateway
     monitor:
       port: 8010
