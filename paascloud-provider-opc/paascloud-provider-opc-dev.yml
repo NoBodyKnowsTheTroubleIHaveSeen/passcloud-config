@@ -140,3 +140,6 @@ paascloud:
       instanceName: paascloud-provider-opc
       consumerGroup: CID_OPC
       producerGroup: PID_OPC
+eureka:
+  instance:
+    hostname : paascloud-provider-opc

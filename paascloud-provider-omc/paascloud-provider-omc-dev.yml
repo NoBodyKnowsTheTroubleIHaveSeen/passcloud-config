@@ -149,3 +149,6 @@ paascloud:
 dataflowJob:
   cron: 0 */20 * * * ?
   shardingTotalCount: 1
+eureka:
+  instance:
+    hostname : paascloud-provider-omc

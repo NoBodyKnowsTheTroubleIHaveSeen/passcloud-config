@@ -152,3 +152,6 @@ dataflowJob:
   cron: 0 */20 * * * ?
   shardingTotalCount: 1
   shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
+eureka:
+  instance:
+    hostname : paascloud-provider-tpc

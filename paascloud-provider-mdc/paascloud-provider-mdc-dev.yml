@@ -134,3 +134,6 @@ paascloud:
       clientSecret: ${security.oauth2.client.clientSecret}
       clientAuthenticationScheme: header
       tokenStore: jwt
+eureka:
+  instance:
+    hostname : paascloud-provider-mdc
