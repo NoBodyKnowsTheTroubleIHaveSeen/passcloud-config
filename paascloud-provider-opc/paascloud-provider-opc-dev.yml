@@ -143,3 +143,10 @@ paascloud:
 eureka:
   instance:
     hostname : paascloud-provider-opc
+    
+paascloud:
+  qiniu:
+    oss:
+      public-host: http://pi0g1f1at.bkt.clouddn.com
+      privateHost:
+      fileMaxSize: 104857600      
