@@ -140,13 +140,11 @@ paascloud:
       instanceName: paascloud-provider-opc
       consumerGroup: CID_OPC
       producerGroup: PID_OPC
-eureka:
-  instance:
-    hostname : paascloud-provider-opc
-    
-paascloud:
   qiniu:
     oss:
       public-host: http://pi0g1f1at.bkt.clouddn.com
       privateHost:
-      fileMaxSize: 104857600      
+      fileMaxSize: 104857600            
+eureka:
+  instance:
+    hostname : paascloud-provider-opc
