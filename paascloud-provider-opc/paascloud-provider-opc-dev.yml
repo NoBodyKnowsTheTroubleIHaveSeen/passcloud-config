@@ -90,6 +90,7 @@ mybatis:
     map-underscore-to-camel-case: true
 
 mapper:
+  mappers: com.paascloud.core.mybatis.MyMapper
   not-empty: true
   identity: MYSQL
 
