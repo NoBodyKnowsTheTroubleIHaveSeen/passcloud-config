@@ -143,7 +143,7 @@ paascloud:
       producerGroup: PID_OPC
   qiniu:
     oss:
-      public-host: http://pi0g1f1at.bkt.clouddn.com
+      public-host: http://qiniu.qzjxcy.com
       privateHost:
       fileMaxSize: 104857600            
 eureka:
