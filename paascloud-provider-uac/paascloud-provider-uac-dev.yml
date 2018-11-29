@@ -122,7 +122,7 @@ paascloud:
     interceptor:
       enable: true
   oauth2:
-    jwtSigningKey: paascloud
+    jwtSigningKey: '{cipher}b11f2e852b3aad2bef83867100b4064759deb60890475fa61ff7b6e0b2f1ade7e36385a96279eb72176051ab1cbca4a4'
     client:
       id: ${security.oauth2.resource.id}
       accessTokenUrl: ${security.oauth2.client.access-token-uri}
