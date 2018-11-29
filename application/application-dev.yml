@@ -75,14 +75,6 @@ hystrix:
             timeoutInMilliseconds: 160000
 paascloud:
   server:
-#    eureka:
-#      port: 8761
-#      hostname: paascloud-eureka
-#      serviceUrl: http://jxEurke:eurkepwd=123@paascloud-eureka:8761/eureka/
-#    discovery:
-#      port: 8080
-#      hostname: paascloud-discovery
-#      serviceUrl: http://jxConfig:configPwd999@paascloud-discovery:8080
     gateway:
       port: 8888
       hostname: paascloud-gateway
