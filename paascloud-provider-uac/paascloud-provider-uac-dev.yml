@@ -5,7 +5,7 @@ druid:
         url: jdbc:mysql://paascloud-db-mysql:3306/paascloud_uac?characterEncoding=utf8&useSSL=false&tinyInt1isBit=false
         driver-class-name: com.mysql.jdbc.Driver
         username: root
-        password: 123456
+        password: '{cipher}91047b1bff364f8f7ddf9488691d9812b78e47565175b1c8dce5524f2f36cf4f'
         initial-size: 10
         min-idle: 10
         max-active: 30
@@ -97,7 +97,7 @@ security:
   oauth2:
     client:
       clientId: paascloud-client-uac
-      clientSecret: paascloudClientSecret
+      clientSecret: '{cipher}dc47331dd22b22ac3b641a83a201fd51bd1def71437f3bcc0f49fc6c58c4d1545d2168fbc18260c731097040da750271'
       access-token-uri: http://paascloud-provider-uac:8100/uac/oauth/token
       user-authorization-uri: http://paascloud-provider-uac:8100/uac/oauth/authorize
     resource:
@@ -155,42 +155,42 @@ paascloud:
       tokenStore: jwt
       clients[0]:
         clientId: paascloud-client-uac
-        clientSecret: paascloudClientSecret
+        clientSecret: '{cipher}dc47331dd22b22ac3b641a83a201fd51bd1def71437f3bcc0f49fc6c58c4d1545d2168fbc18260c731097040da750271'
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[1]:
         clientId: paascloud-browser
-        clientSecret: paascloudClientSecret
+        clientSecret: '{cipher}dc47331dd22b22ac3b641a83a201fd51bd1def71437f3bcc0f49fc6c58c4d1545d2168fbc18260c731097040da750271'
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[2]:
         clientId: paascloud-client-gateway
-        clientSecret: paascloudClientSecret
+        clientSecret: '{cipher}dc47331dd22b22ac3b641a83a201fd51bd1def71437f3bcc0f49fc6c58c4d1545d2168fbc18260c731097040da750271'
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[3]:
         clientId: paascloud-client-zipkin
-        clientSecret: paascloudClientSecret
+        clientSecret: '{cipher}dc47331dd22b22ac3b641a83a201fd51bd1def71437f3bcc0f49fc6c58c4d1545d2168fbc18260c731097040da750271'
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[4]:
         clientId: paascloud-client-mdc
-        clientSecret: paascloudClientSecret
+        clientSecret: '{cipher}dc47331dd22b22ac3b641a83a201fd51bd1def71437f3bcc0f49fc6c58c4d1545d2168fbc18260c731097040da750271'
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[5]:
         clientId: paascloud-client-omc
-        clientSecret: paascloudClientSecret
+        clientSecret: '{cipher}dc47331dd22b22ac3b641a83a201fd51bd1def71437f3bcc0f49fc6c58c4d1545d2168fbc18260c731097040da750271'
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[6]:
         clientId: paascloud-client-opc
-        clientSecret: paascloudClientSecret
+        clientSecret: '{cipher}dc47331dd22b22ac3b641a83a201fd51bd1def71437f3bcc0f49fc6c58c4d1545d2168fbc18260c731097040da750271'
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[7]:
         clientId: paascloud-client-tpc
-        clientSecret: paascloudClientSecret
+        clientSecret: '{cipher}dc47331dd22b22ac3b641a83a201fd51bd1def71437f3bcc0f49fc6c58c4d1545d2168fbc18260c731097040da750271'
         accessTokenValidateSeconds: 7200
         scope: "*"
 eureka:

@@ -115,7 +115,7 @@ security:
   oauth2:
     client:
       clientId: paascloud-client-gateway
-      clientSecret: paascloudClientSecret
+      clientSecret: '{cipher}dc47331dd22b22ac3b641a83a201fd51bd1def71437f3bcc0f49fc6c58c4d1545d2168fbc18260c731097040da750271'
       access-token-uri: http://paascloud-gateway:8888/uac/oauth/token
       user-authorization-uri: http://paascloud-gateway:8888/uac/oauth/authorize
     resource:

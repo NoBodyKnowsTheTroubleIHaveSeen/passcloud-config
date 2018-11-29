@@ -8,13 +8,13 @@ spring:
     password: guest
   redis:
     host: paascloud-db-redis
-    password: paascloud@redis
+    password: '{cipher}e4029443fd242ccab07ef537858d4dbf9dac9ad91ebb463557b19148c01ebfd46829d75b05c79a551faa79e3e3338703'
     port: 6379
     timeout: 0
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: 123456
+    password: '{cipher}91047b1bff364f8f7ddf9488691d9812b78e47565175b1c8dce5524f2f36cf4f'
     type: com.alibaba.druid.pool.DruidDataSource
     initial-size: 10
     min-idle: 10

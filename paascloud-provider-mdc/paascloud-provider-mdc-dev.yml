@@ -5,7 +5,7 @@ druid:
         url: jdbc:mysql://paascloud-db-mysql:3306/paascloud_mdc?characterEncoding=utf8&useSSL=false&tinyInt1isBit=false
         driver-class-name: com.mysql.jdbc.Driver
         username: root
-        password: 123456
+        password: '{cipher}91047b1bff364f8f7ddf9488691d9812b78e47565175b1c8dce5524f2f36cf4f'
         initial-size: 10
         min-idle: 10
         max-active: 30
@@ -98,7 +98,7 @@ security:
   oauth2:
     client:
       clientId: paascloud-client-mdc
-      clientSecret: paascloudClientSecret
+      clientSecret: '{cipher}c4afb789186014af2f8a2493efd0a8977b31a84cafc5617ff3395fb87ed3a830918e49166396e85c281f6ada1e7e2f1b'
       access-token-uri: http://paascloud-provider-uac:8100/uac/oauth/token
       user-authorization-uri: http://paascloud-provider-uac:8100/uac/oauth/authorize
     resource:
