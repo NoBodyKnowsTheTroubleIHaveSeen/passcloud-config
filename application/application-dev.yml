@@ -115,8 +115,8 @@ paascloud:
       expiredMinutes: 120
   aliyun:
     key:
-      accessKeyId: yourAliyunAccessKey
-      accessKeySecret: '{cipher}AQBF/u1hdyQ0GASmbqL2PXXYHAUgHJg0JVtCqm3SnYJ6oxVVMnO298Mp4NerHg4FsZ9MdmoAc/yhYEJZ4whsw4X6wRHOmA4nYJnfvcakQF8FqOqUZViRK3ZHWPaeXRdzk7DkyfPOpe6uRoDVzWumT2XMmkhy6vztdlPOQdkvIM7ubNLk1cYHsS2dX+5B5C81R+WZ1R6E9uDeNsSY09a/06IQY6mIesH37YdaLCkdaMQ6S/LB/oNAKvaknJLXQ72ViH2vuu2p8GGFUmSX8REWQfC0oSPZuz69dNvLDyoukES5KqMZ3VNp7aC9NsVW+VrOJfFUtoVyZAmdnh9mgyRny57ztWSfVQZ82lQDfUYalsucQt0KDFhJb4mxddON+jZ6VwQ='
+      accessKeyId: '{cipher}f709b49c67e3e2cac2201c767f4d8d80b780a501b950d70d370336ddc1eea3ec6db2b8a55cca7ba6a8bec6715fa5005b'
+      accessKeySecret: '{cipher}80cc12c50f073c3bdb7b390011dffe26644e8ec8b728d98f3e1f6377c852835169166e926ae75bf7d2e12e7a01107421'
     rocketMq:
       namesrvAddr: paascloud-mq-rocket:9876
     sms:
