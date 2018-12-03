@@ -121,10 +121,10 @@ paascloud:
       namesrvAddr: paascloud-mq-rocket:9876
     sms:
       signName: 测试
-      regionId: cn-beijing
-      endpoint:
+      regionId: cn-hangzhou
+      endpoint: defaultEndPoint
       endpointName: cn-beijing
-      product: 'your sms product'
+      product: 'Dysmsapi'
       domain: dysmsapi.aliyuncs.com
   zk:
     zkAddressList: paascloud-provider-zk:2181
