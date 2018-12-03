@@ -120,7 +120,7 @@ paascloud:
     rocketMq:
       namesrvAddr: paascloud-mq-rocket:9876
     sms:
-      signName: 测试
+      signName: 聚享文化
       regionId: cn-hangzhou
       endpoint: defaultEndPoint
       endpointName: cn-beijing
