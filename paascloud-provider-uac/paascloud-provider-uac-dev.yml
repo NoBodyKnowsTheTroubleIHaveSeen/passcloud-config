@@ -143,11 +143,11 @@ paascloud:
         providerId: weixin
     code:
       image:
-        expireIn: 180
+        expireIn: 300
         url: /auth/register,/auth/submitResetPwdEmail,/uac/auth/code/sms
       sms:
         expireIn: 600
-        url: /uac/auth/submitResetPwdPhone,/uac/auth/mingProgramRegister
+        url: /uac/auth/submitResetPwdPhone,/uac/auth/miniProgramRegister
         mobileMaxSendCount: 1
         ipMaxSendCount: 2
         totalMaxSendCount: 3
