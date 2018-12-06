@@ -108,7 +108,7 @@ paascloud:
   enableSqlLogInterceptor: false
   aliyun:
     rocketMq:
-      enable: false
+      enable: true
       reliableMessageConsumer: false
       reliableMessageProducer: true
       instanceName: paascloud-provider-omc
