@@ -110,7 +110,7 @@ paascloud:
     rocketMq:
       enable: false
       reliableMessageConsumer: false
-      reliableMessageProducer: false
+      reliableMessageProducer: true
       instanceName: paascloud-provider-omc
       consumerGroup: CID_OMC
       producerGroup: PID_OMC
