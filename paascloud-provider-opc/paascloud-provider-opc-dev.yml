@@ -122,7 +122,7 @@ paascloud:
     oss:
       privateHost:
       publicHost:
-      fileMaxSize: 104857600
+      fileMaxSize: 10485760000000
   oauth2:
     jwtSigningKey: '{cipher}b11f2e852b3aad2bef83867100b4064759deb60890475fa61ff7b6e0b2f1ade7e36385a96279eb72176051ab1cbca4a4'
     client:
@@ -145,7 +145,7 @@ paascloud:
     oss:
       public-host: http://qiniu.qzjxcy.com
       privateHost: http://qiniu.qzjxcy.com
-      fileMaxSize: 104857600            
+      fileMaxSize: 10485760000000            
 eureka:
   instance:
     hostname : paascloud-provider-opc
