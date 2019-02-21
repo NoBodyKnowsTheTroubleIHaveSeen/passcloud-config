@@ -21,10 +21,10 @@ spring:
     max-active: 20
     test-on-borrow: true
   mail:
-    host: test.com
-    username: abc@test.com
-    password: test123
-    port: 465
+    host: smtp.163.com
+    username: liaccount@163.com
+    password: gkdms776234@s
+    port: 587
     protocol: smtp
     test-connection: false
     default-encoding: UTF-8
@@ -38,7 +38,7 @@ spring:
           writetimeout: 10000
           socketFactory:
             class: javax.net.ssl.SSLSocketFactory
-            port: 465
+            port: 587
           starttls:
             enable: true
             required: true

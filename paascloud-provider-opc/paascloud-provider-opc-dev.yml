@@ -49,8 +49,8 @@ spring:
       enabled: true
     multipart:
       enabled: true
-      max-request-size: 50MB
-      max-file-size: 50MB
+      max-request-size: 5000MB
+      max-file-size: 5000MB
   mvc:
     date-format: yyyy-MM-dd HH:mm:ss
   jackson:
